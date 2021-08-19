@@ -4,9 +4,6 @@
 
 # Wallpaper
 sudo cp -f common/wal.jpg /usr/share/backgrounds # Set wallpaper
-if ! type "nitrogen" > /dev/null
-then
-	nitrogen --set-auto /usr/share/backgrounds/wal.jpg
-else
-	echo "You may need to set your wallpaper manually."
-fi # Set with nitrogen
+echo "Wallpaper written to /usr/share/backgrounds/wal.jpg"
+nitrogen --set-zoom-fill /usr/share/backgrounds/wal.jpg
+
