@@ -8,3 +8,6 @@ sudo cp -f common/wal.jpg /usr/share/backgrounds/wal.jpg # Set wallpaper
 echo "Wallpaper written to /usr/share/backgrounds/wal.jpg"
 nitrogen --set-zoom-fill /usr/share/backgrounds/wal.jpg
 cp -f linux/nitrogen/* ~/.config/nitrogen/
+
+# ZSH
+cp -f linux/zsh/.zshrc ~/
