@@ -102,5 +102,6 @@ source $ZSH/oh-my-zsh.sh
 alias py="python3"
 alias syu="yay -Syuv"
 alias cls="clear"
-alias ins="sudo pacman -Sy"
-alias rem="sudo pacman -Rss"
+alias ins="sudo pacman -Syv"
+alias aur-ins="yay -Syv"
+alias rem="sudo pacman -Rssv"
