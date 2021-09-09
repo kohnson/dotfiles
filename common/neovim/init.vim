@@ -31,7 +31,12 @@ call deoplete#custom#var('omni', 'input_patterns', {
 
 " VimTex config
 " PDF preview
-let g:vimtex_view_general_viewer = 'C:\Users\Angelo\AppData\Local\SumatraPDF\SumatraPDF.exe'
+if has ('win32')
+	let g:vimtex_view_general_viewer = 'C:\Users\Angelo\AppData\Local\SumatraPDF\SumatraPDF.exe'
+elseif has ('unix')
+	let g:vimtex_view_general_viewer = '/usr/bin/zathura'
+endif
+
 let g:vimtex_view_general_options
 	\ = '-reuse-instance -forward-search @tex @line @pdf'
 let g:vimtex_view_general_options_latexmk = '-reuse-instance'
