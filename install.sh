@@ -11,3 +11,6 @@ cp -f linux/nitrogen/* ~/.config/nitrogen/
 
 # ZSH
 cp -f linux/zsh/.zshrc ~/
+
+# Neovim
+cp -f common/neovim/init.vim ~/.config/nvim/
