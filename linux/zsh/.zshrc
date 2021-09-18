@@ -42,7 +42,7 @@ ZSH_THEME="candy"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
@@ -72,7 +72,9 @@ ZSH_THEME="candy"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-source $ZSH/oh-my-zsh.sh
+if [-f $ZSH/oh-my-zsh.sh]; then
+	source $ZSH/oh-my-zsh.sh
+fi
 
 # User configuration
 
@@ -100,10 +102,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias py="python3"
-alias syu="yay -Syuv"
+alias psyu="yay -Syuv"
 alias cls="clear"
-alias ins="sudo pacman -Syv"
-alias aur-ins="yay -Syv"
-alias upd="sudo pacman -Syyv"
-alias rem="sudo pacman -Rsv"
+alias pins="sudo pacman -Syv"
+alias pains="yay -Syv"
+alias pupd="sudo pacman -Syyv"
+alias prem="sudo pacman -Rsv"
 alias :q="exit"
