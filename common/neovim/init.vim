@@ -1,15 +1,23 @@
 " VimRC
 
+" Personal config
 " Relative line numbering
 :set number
 :set relativenumber
 
+" Leader
+let mapleader=","
+
+
 " Plugins
 call plug#begin()
 " LaTeX tools
+
 Plug 'lervag/vimtex'
+
 " LaTeX syntax checking
 Plug 'neomake/neomake'
+
 " Auto-completion
 if has('nvim')
 	Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins' }
@@ -18,10 +26,11 @@ else
 	Plug 'roxma/nvim-yarp'
 	Plug 'roxma/vim-hug-neovim-rpc'
 endif
+
 " Git
 Plug 'tpope/vim-fugitive'
-" Airline
 
+" Airline
 Plug 'vim-airline/vim-airline'
 call plug#end()
 
