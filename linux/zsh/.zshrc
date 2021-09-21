@@ -72,7 +72,7 @@ ENABLE_CORRECTION="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
 
-if [-f $ZSH/oh-my-zsh.sh]; then
+if [ -f $ZSH/oh-my-zsh.sh ]; then
 	source $ZSH/oh-my-zsh.sh
 fi
 
