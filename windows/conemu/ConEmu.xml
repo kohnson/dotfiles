@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2021-09-11 16:16:30" build="210905">
+		<key name=".Vanilla" modified="2021-09-22 13:25:32" build="210912">
 			<value name="Language" type="string" data="en"/>
 			<value name="StartType" type="hex" data="02"/>
 			<value name="CmdLine" type="string" data=""/>
@@ -10,21 +10,21 @@
 			<value name="StartFarFolders" type="hex" data="00"/>
 			<value name="StartFarEditors" type="hex" data="00"/>
 			<value name="StartCreateDelay" type="ulong" data="100"/>
-			<value name="ColorTable00" type="dword" data="00222827"/>
-			<value name="ColorTable01" type="dword" data="009e5401"/>
-			<value name="ColorTable02" type="dword" data="0004aa74"/>
-			<value name="ColorTable03" type="dword" data="00a6831a"/>
-			<value name="ColorTable04" type="dword" data="003403a7"/>
-			<value name="ColorTable05" type="dword" data="009c5689"/>
-			<value name="ColorTable06" type="dword" data="0049b6b6"/>
-			<value name="ColorTable07" type="dword" data="00cacaca"/>
-			<value name="ColorTable08" type="dword" data="007c7c7c"/>
-			<value name="ColorTable09" type="dword" data="00f58303"/>
-			<value name="ColorTable10" type="dword" data="0006d08d"/>
-			<value name="ColorTable11" type="dword" data="00e5c258"/>
-			<value name="ColorTable12" type="dword" data="004b04f3"/>
-			<value name="ColorTable13" type="dword" data="00b87da8"/>
-			<value name="ColorTable14" type="dword" data="0081cccc"/>
+			<value name="ColorTable00" type="dword" data="00000000"/>
+			<value name="ColorTable01" type="dword" data="00800000"/>
+			<value name="ColorTable02" type="dword" data="00008000"/>
+			<value name="ColorTable03" type="dword" data="00808000"/>
+			<value name="ColorTable04" type="dword" data="00000080"/>
+			<value name="ColorTable05" type="dword" data="00800080"/>
+			<value name="ColorTable06" type="dword" data="00008080"/>
+			<value name="ColorTable07" type="dword" data="00c0c0c0"/>
+			<value name="ColorTable08" type="dword" data="00808080"/>
+			<value name="ColorTable09" type="dword" data="00ff0000"/>
+			<value name="ColorTable10" type="dword" data="0000ff00"/>
+			<value name="ColorTable11" type="dword" data="00ffff00"/>
+			<value name="ColorTable12" type="dword" data="000000ff"/>
+			<value name="ColorTable13" type="dword" data="00ff00ff"/>
+			<value name="ColorTable14" type="dword" data="0000ffff"/>
 			<value name="ColorTable15" type="dword" data="00ffffff"/>
 			<value name="TextColorIdx" type="hex" data="10"/>
 			<value name="BackColorIdx" type="hex" data="10"/>
@@ -54,7 +54,7 @@
 			<value name="FadeInactiveHigh" type="hex" data="C8"/>
 			<value name="ConVisible" type="hex" data="00"/>
 			<value name="UseInjects" type="hex" data="01"/>
-			<value name="SetDefaultTerminal" type="hex" data="00"/>
+			<value name="SetDefaultTerminal" type="hex" data="01"/>
 			<value name="SetDefaultTerminalStartup" type="hex" data="00"/>
 			<value name="SetDefaultTerminalStartupTSA" type="hex" data="01"/>
 			<value name="DefaultTerminalAgressive" type="hex" data="01"/>
@@ -122,13 +122,13 @@
 			<value name="CompressLongStrings" type="hex" data="01"/>
 			<value name="BackGround Image show" type="hex" data="00"/>
 			<value name="BackGround Image" type="string" data="c:\back.bmp"/>
-			<value name="bgImageDarker" type="hex" data="FF"/>
+			<value name="bgImageDarker" type="hex" data="AD"/>
 			<value name="bgImageColors" type="dword" data="ffffffff"/>
 			<value name="bgOperation" type="hex" data="00"/>
 			<value name="bgPluginAllowed" type="hex" data="01"/>
-			<value name="AlphaValue" type="hex" data="F8"/>
-			<value name="AlphaValueSeparate" type="hex" data="01"/>
-			<value name="AlphaValueInactive" type="hex" data="EE"/>
+			<value name="AlphaValue" type="hex" data="D6"/>
+			<value name="AlphaValueSeparate" type="hex" data="00"/>
+			<value name="AlphaValueInactive" type="hex" data="F8"/>
 			<value name="UserScreenTransparent" type="hex" data="00"/>
 			<value name="ColorKeyTransparent" type="hex" data="00"/>
 			<value name="ColorKeyValue" type="dword" data="00010101"/>
@@ -137,11 +137,11 @@
 			<value name="Cascaded" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
 			<value name="WindowMode" type="dword" data="00000520"/>
-			<value name="ConWnd X" type="long" data="507"/>
-			<value name="ConWnd Y" type="long" data="500"/>
+			<value name="ConWnd X" type="long" data="7"/>
+			<value name="ConWnd Y" type="long" data="0"/>
 			<value name="LastMonitor" type="string" data="0,0,1366,738"/>
 			<value name="ConWnd Width" type="dword" data="00000078"/>
-			<value name="ConWnd Height" type="dword" data="0000001e"/>
+			<value name="ConWnd Height" type="dword" data="0000001c"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="QuakeStyle" type="hex" data="00"/>
 			<value name="Restore2ActiveMon" type="hex" data="00"/>
@@ -303,7 +303,7 @@
 			<value name="TabRecent" type="hex" data="00"/>
 			<value name="TabDblClick" type="ulong" data="1"/>
 			<value name="TabBtnDblClick" type="ulong" data="0"/>
-			<value name="TabsOnTaskBar" type="hex" data="02"/>
+			<value name="TabsOnTaskBar" type="hex" data="00"/>
 			<value name="TaskBarOverlay" type="hex" data="01"/>
 			<value name="TaskbarProgress" type="hex" data="01"/>
 			<value name="TabCloseMacro" type="string" data=""/>
@@ -320,7 +320,7 @@
 			<value name="TabEditorModified" type="string" data="&lt;%c.%i&gt;[%s] *"/>
 			<value name="TabViewer" type="string" data="&lt;%c.%i&gt;[%s]"/>
 			<value name="TabLenMax" type="ulong" data="20"/>
-			<value name="AdminTitleSuffix" type="string" data=" (Admin)"/>
+			<value name="AdminTitleSuffix" type="string" data=":: Administrator"/>
 			<value name="AdminShowShield" type="hex" data="03"/>
 			<value name="HideInactiveConsoleTabs" type="hex" data="00"/>
 			<value name="ShowFarWindows" type="hex" data="01"/>
@@ -391,7 +391,7 @@
 			<value name="Update.DownloadPath" type="string" data="%TEMP%\ConEmu"/>
 			<value name="Update.LeavePackages" type="hex" data="00"/>
 			<value name="Update.PostUpdateCmd" type="string" data="echo Last successful update&gt;ConEmuUpdate.info &amp;&amp; date /t&gt;&gt;ConEmuUpdate.info &amp;&amp; time /t&gt;&gt;ConEmuUpdate.info"/>
-			<key name="HotKeys" modified="2021-09-11 16:16:30" build="210905">
+			<key name="HotKeys" modified="2021-09-22 13:25:32" build="210912">
 				<value name="KeyMacroVersion" type="hex" data="02"/>
 				<value name="Multi.Modifier" type="dword" data="00000011"/>
 				<value name="Multi.ArrowsModifier" type="dword" data="0000005b"/>
@@ -407,7 +407,7 @@
 				<value name="SetFocusParent" type="dword" data="0000a01b"/>
 				<value name="CheckUpdates" type="dword" data="00105b55"/>
 				<value name="Multi.NewConsole" type="dword" data="00000000"/>
-				<value name="Multi.NewConsoleShift" type="dword" data="00001154"/>
+				<value name="Multi.NewConsoleShift" type="dword" data="00101154"/>
 				<value name="Multi.CmdKey" type="dword" data="00000000"/>
 				<value name="Multi.NewWndConfirm" type="dword" data="00000000"/>
 				<value name="Multi.NewConsolePopup" type="dword" data="00000000"/>
@@ -442,7 +442,7 @@
 				<value name="Multi.GroupInputKey" type="dword" data="00125d47"/>
 				<value name="Multi.Detach" type="dword" data="00000000"/>
 				<value name="Multi.Unfasten" type="dword" data="00000000"/>
-				<value name="Multi.Close" type="dword" data="00001157"/>
+				<value name="Multi.Close" type="dword" data="00101157"/>
 				<value name="CloseTabKey" type="dword" data="00000000"/>
 				<value name="CloseGroupKey" type="dword" data="00000000"/>
 				<value name="CloseGroupPrcKey" type="dword" data="00000000"/>
@@ -710,23 +710,23 @@
 					<value name="Cmd1" type="string" data='&gt; "%windir%\system32\cmd.exe" /k ""%ConEmuBaseDir%\CmdInit.cmd" &amp; echo This is Native cmd.exe"'/>
 					<value name="Cmd2" type="string" data='"%windir%\syswow64\cmd.exe" /k ""%ConEmuBaseDir%\CmdInit.cmd" &amp; echo This is 32 bit cmd.exe -new_console:s50V"'/>
 				</key>
-				<key name="Task14" modified="2021-09-11 16:16:30" build="210905">
+				<key name="Task14" modified="2021-09-22 13:25:32" build="210912">
 					<value name="Name" type="string" data="{Shells::PowerShell (Admin)}"/>
 					<value name="Flags" type="dword" data="00000004"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data=""/>
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
-					<value name="Cmd1" type="string" data="powershell.exe -new_console:a"/>
+					<value name="Cmd1" type="string" data="-new_console:d:C:\Users\Angelo powershell.exe -new_console:a"/>
 				</key>
-				<key name="Task15" modified="2021-09-11 16:16:30" build="210905">
+				<key name="Task15" modified="2021-09-22 13:25:32" build="210912">
 					<value name="Name" type="string" data="{Shells::PowerShell Core}"/>
 					<value name="Flags" type="dword" data="00000005"/>
 					<value name="Hotkey" type="dword" data="00000000"/>
 					<value name="GuiArgs" type="string" data=""/>
 					<value name="Active" type="long" data="0"/>
 					<value name="Count" type="long" data="1"/>
-					<value name="Cmd1" type="string" data="pwsh.exe -new_console:d:C:\Users\Angelo "/>
+					<value name="Cmd1" type="string" data="-new_console:d:C:\Users\Angelo pwsh.exe"/>
 				</key>
 				<key name="Task16" modified="2021-09-11 16:16:30" build="210905">
 					<value name="Name" type="string" data="{Shells::PowerShell Core (Admin)}"/>
