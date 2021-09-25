@@ -93,19 +93,14 @@ fi
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias py="python3"
-alias psyu="yay -Syuv"
-alias cls="clear"
-alias pins="sudo pacman -Syv"
-alias pains="yay -Syv"
-alias pupd="sudo pacman -Syyv"
-alias prem="sudo pacman -Rsv"
-alias :q="exit"
+## Aliases
+# General purpose
+	alias py="python3"
+	alias :q="exit"
+	alias wttr="curl wttr.in"
+# Package management
+	alias psyu="yay -Syuv"
+	alias pins="sudo pacman -Syv"
+	alias pains="yay -Syv"
+	alias pupd="sudo pacman -Syyv"
+	alias prem="sudo pacman -Rsv"
