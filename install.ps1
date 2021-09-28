@@ -1,7 +1,11 @@
 ## Install script for my dotfiles (WINDOWS ONLY)
 
 # Wallpaper (None of the methods described by the internet will work properly on other pcs)
-Write-Host -ForegroundColor Blue "Set the wallpaper yourself, jackass"
+Copy-Item -Force .\common\wal.jpg "$env:HOMEPATH\Pictures\Saved Pictures\Backgrounds"
+Switch (Read-Host -Prompt "Change wallpaper now? (y/N)") {
+	"y" {ms-settings:personalization-background}
+	Default {Write-Host -ForegroundColor Blue "Wallpaper saved to C:\$env:HOMEPATH\Pictures\Saved Pictures\Backgrounds"}
+}
 
 # PowerShell config
 Copy-Item -Force .\common\pwsh\Microsoft.PowerShell_profile.ps1 $PROFILE
@@ -23,3 +27,6 @@ Else {
 
 # ConEmu config
 Copy-Item -Force ".\windows\conemu\ConEmu.xml" "$env:APPDATA\ConEmu.xml"
+
+# Qutebrowser config
+Copy-Item -Force .\common\qutebrowser\autoconfig.yml $env:APPDATA\qutebrowser\config\autoconfig.yml
