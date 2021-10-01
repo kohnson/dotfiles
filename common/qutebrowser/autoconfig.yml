@@ -15,6 +15,8 @@ settings:
         <Ctrl+o>: open -p
         <Ctrl+q>: quit
         F: hint all tab
+        J: tab-prev
+        K: tab-next
         PP: null
         Pp: open -t -- {clipboard}
         ad: null
@@ -39,16 +41,23 @@ settings:
     global: black
   colors.statusbar.private.bg:
     global: '#222222'
+  colors.tabs.even.fg:
+    global: black
+  colors.tabs.odd.fg:
+    global: black
   colors.webpage.darkmode.algorithm:
     global: lightness-cielab
   colors.webpage.darkmode.enabled:
     global: true
+  content.blocking.whitelist:
+    global:
+    - https://*.gitlab.com/*
   content.geolocation:
     https://www.openstreetmap.org: true
     https://www.services.gov.on.ca: false
   content.headers.user_agent:
     global: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
-      Gecko) Chrome/89.0.4389.90 Safari/537.36
+      Gecko) Chrome/90.0.4430.93 Safari/537.36
   content.media.audio_capture:
     https://teams.microsoft.com: true
   content.media.audio_video_capture:
