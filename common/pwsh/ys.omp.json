@@ -96,7 +96,7 @@
             "foreground": "white",
             "properties": {
               "prefix": "",
-              "text": "$",
+              "text": "%",
               "postfix": ""
             }
           }
