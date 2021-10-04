@@ -27,6 +27,8 @@ settings:
         gr: set-cmd-text -s :tab-take
         k: scroll up
         pP: null
+        th: null
+        tl: null
         xD: download-delete
         xO: prompt-open-download
         xR: download-retry
@@ -56,8 +58,8 @@ settings:
     https://www.openstreetmap.org: true
     https://www.services.gov.on.ca: false
   content.headers.user_agent:
-    global: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
-      Gecko) Chrome/90.0.4430.93 Safari/537.36
+    global: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko)
+      Chrome/90.0.4430.93 Safari/537.36
   content.media.audio_capture:
     https://teams.microsoft.com: true
   content.media.audio_video_capture:
