@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <key name="Software">
 	<key name="ConEmu">
-		<key name=".Vanilla" modified="2021-09-27 10:57:13" build="210912">
+		<key name=".Vanilla" modified="2021-10-10 23:03:06" build="210912">
 			<value name="Language" type="string" data="en"/>
 			<value name="StartType" type="hex" data="02"/>
 			<value name="CmdLine" type="string" data=""/>
@@ -126,7 +126,7 @@
 			<value name="bgImageColors" type="dword" data="ffffffff"/>
 			<value name="bgOperation" type="hex" data="00"/>
 			<value name="bgPluginAllowed" type="hex" data="01"/>
-			<value name="AlphaValue" type="hex" data="D6"/>
+			<value name="AlphaValue" type="hex" data="F6"/>
 			<value name="AlphaValueSeparate" type="hex" data="00"/>
 			<value name="AlphaValueInactive" type="hex" data="F8"/>
 			<value name="UserScreenTransparent" type="hex" data="00"/>
@@ -137,11 +137,11 @@
 			<value name="Cascaded" type="hex" data="01"/>
 			<value name="IntegralSize" type="hex" data="00"/>
 			<value name="WindowMode" type="dword" data="00000520"/>
-			<value name="ConWnd X" type="long" data="90"/>
-			<value name="ConWnd Y" type="long" data="90"/>
+			<value name="ConWnd X" type="long" data="93"/>
+			<value name="ConWnd Y" type="long" data="29"/>
 			<value name="LastMonitor" type="string" data="0,0,1366,738"/>
-			<value name="ConWnd Width" type="dword" data="00000050"/>
-			<value name="ConWnd Height" type="dword" data="00000019"/>
+			<value name="ConWnd Width" type="dword" data="00000053"/>
+			<value name="ConWnd Height" type="dword" data="0000002a"/>
 			<value name="16bit Height" type="ulong" data="0"/>
 			<value name="QuakeStyle" type="hex" data="00"/>
 			<value name="Restore2ActiveMon" type="hex" data="00"/>
@@ -391,7 +391,7 @@
 			<value name="Update.DownloadPath" type="string" data="%TEMP%\ConEmu"/>
 			<value name="Update.LeavePackages" type="hex" data="00"/>
 			<value name="Update.PostUpdateCmd" type="string" data="echo Last successful update&gt;ConEmuUpdate.info &amp;&amp; date /t&gt;&gt;ConEmuUpdate.info &amp;&amp; time /t&gt;&gt;ConEmuUpdate.info"/>
-			<key name="HotKeys" modified="2021-09-22 13:25:32" build="210912">
+			<key name="HotKeys" modified="2021-10-14 09:00:50" build="210912">
 				<value name="KeyMacroVersion" type="hex" data="02"/>
 				<value name="Multi.Modifier" type="dword" data="00000011"/>
 				<value name="Multi.ArrowsModifier" type="dword" data="0000005b"/>
@@ -460,15 +460,15 @@
 				<value name="Multi.MoveRight" type="dword" data="00125b27"/>
 				<value name="CTS.VkBlockStart" type="dword" data="00000000"/>
 				<value name="CTS.VkTextStart" type="dword" data="00000000"/>
-				<value name="CTS.VkCopyFmt0" type="dword" data="00001143"/>
-				<value name="CTS.VkCopyFmt1" type="dword" data="00101143"/>
+				<value name="CTS.VkCopyFmt0" type="dword" data="00101143"/>
+				<value name="CTS.VkCopyFmt1" type="dword" data="10121143"/>
 				<value name="CTS.VkCopyFmt2" type="dword" data="00000000"/>
 				<value name="CTS.VkCopyAll" type="dword" data="00000000"/>
 				<value name="HighlightMouseSwitch" type="dword" data="00005d4c"/>
 				<value name="HighlightMouseSwitchX" type="dword" data="00005d58"/>
 				<value name="Multi.ShowTabsList" type="dword" data="00000000"/>
 				<value name="Multi.ShowTabsList2" type="dword" data="00000000"/>
-				<value name="ClipboardVkAllLines" type="dword" data="0000102d"/>
+				<value name="ClipboardVkAllLines" type="dword" data="00101156"/>
 				<value name="ClipboardVkFirstLine" type="dword" data="00001156"/>
 				<value name="Key.AltNumpad" type="dword" data="00000000"/>
 				<value name="DeleteWordToLeft" type="dword" data="00001108"/>
