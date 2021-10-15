@@ -18,5 +18,8 @@ cp -f ./common/neovim/init.vim ~/.config/nvim/
 # Qutebrowser
 cp -f ./common/qutebrowser/autoconfig.yml ~/.config/qutebrowser/autoconfig.yml
 
-#i3wm
+# i3wm
 cp -rf ./linux/i3/ ~/.config/
+
+# Git
+cp -f ./common/.gitconfig ~/

@@ -1,0 +1,27 @@
+[user]
+	email = scp100j@gmail.com
+	name = kohnson
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = master
+[core]
+	editor = nvim
+[alias]
+	conf = config --global
+	c = commit
+	ca = commit -a
+	l = log
+	p = log -p
+	f = fetch
+	r = remote
+	b = branch
+	a = add
+	s = status
+	h = log --graph --full-history --all --pretty=format:%h%x09%d%x20%s
+	pl = pull
+	ps = push
+	aa = add .

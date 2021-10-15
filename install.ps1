@@ -38,3 +38,6 @@ Else {
 	Else {MkDir "~\Programs" && MkDir "~\Programs\share"}
 	Copy-Item -Force .\common\modest.css $HOME\Programs\share\modest.css
 }
+
+# Git config
+Copy-Item -Force ".\common\.gitconfig" "~\.gitconfig"
