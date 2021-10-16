@@ -191,7 +191,7 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym $mod+p exec /usr/local/bin/switch-audio-port
 
 # Take a screenshot
-bindsym $mod+Shift+s exec "i3-scrot"
+bindsym Print exec "i3-scrot"
 bindsym Shift+Print exec "i3-scrot -s"
 
 ##########################################

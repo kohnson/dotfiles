@@ -18,6 +18,7 @@ fi
 	alias py="python3"
 	alias :q="exit"
 	alias wttr="curl wttr.in"
+	alias cmsc="cmatrix -ab -C yellow"
 # Package management
 	alias psyu="yay -Syuv"
 	alias pins="sudo pacman -Syv"
