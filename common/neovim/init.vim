@@ -1,11 +1,14 @@
 " VimRC
 
-" Personal config
-"""""""""""""""""
-set number		" Relative line numbering
+" General config
+""""""""""""""""
+set number			" Relative line numbering
 set relativenumber
-set linebreak		" Wrap line at word
-let mapleader = ","	" Leader
+set linebreak			" Wrap line at word
+let mapleader = ","		" Leader
+set spell spelllang=en_ca	" Spellcheck language
+set nospell			" Unset spellcheck by default
+nnoremap ZW :w<CR>
 
 " Plugins
 """""""""
@@ -15,13 +18,13 @@ Plug 'neomake/neomake'			" LaTeX syntax checking
 Plug 'Shougo/deoplete.nvim'		" Auto-completion
 Plug 'tpope/vim-fugitive'		" Git
 Plug 'itchyny/lightline.vim'		" Statusline
-Plug 'sirver/ultisnips'			" Snippets
+Plug 'SirVer/ultisnips'			" Snippets
 call plug#end()
 
 " Environment variables
 """""""""""""""""""""""
 if has('win32')
-	let g:python3_host_prog = 'C:\Python39\python.exe'
+	let g:python3_host_prog = 'C:\Python310\python.exe'
 elseif has('unix')
 	let g:python3_host_prog = '/usr/bin/python3'
 endif
