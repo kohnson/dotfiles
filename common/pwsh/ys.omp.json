@@ -25,18 +25,18 @@
           {
             "type": "text",
             "style": "plain",
-            "foreground": "lightBlue",
+            "foreground": "lightGreen",
             "properties": {
               "prefix": "",
-              "text": "#"
+              "text": "$"
             }
           },
           {
             "type": "root",
             "style": "plain",
-            "foreground": "red",
+            "foreground": "lightBlue",
             "properties": {
-              "root_icon": "%"
+              "root_icon": "#"
             }
           },
           {
