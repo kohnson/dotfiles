@@ -26,7 +26,7 @@ Else {
 }
 
 # ConEmu config
-Copy-Item -Force ".\windows\conemu\ConEmu.xml" "$env:APPDATA\ConEmu.xml"
+Copy-Item -Force ".\windows\conemu\ConEmu.xml" "$HOME\scoop\persist\conemu\ConEmu\ConEmu.xml"
 
 # Qutebrowser config
 Copy-Item -Force .\common\qutebrowser\autoconfig.yml $env:APPDATA\qutebrowser\config\autoconfig.yml
