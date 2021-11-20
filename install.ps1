@@ -1,10 +1,10 @@
 ## Install script for my dotfiles (WINDOWS ONLY)
 
 # Wallpaper (None of the methods described by the internet will work properly on other pcs)
-Copy-Item -Force .\common\wal.jpg "$env:HOMEPATH\Pictures\Saved Pictures\Backgrounds"
+Copy-Item -Force .\wal\* "$HOME\Pictures\Saved Pictures\Backgrounds"
 Switch (Read-Host -Prompt "Change wallpaper now? (y/N)") {
 	"y" {ms-settings:personalization-background}
-	Default {Write-Host -ForegroundColor Blue "Wallpaper saved to C:\$env:HOMEPATH\Pictures\Saved Pictures\Backgrounds"}
+	Default {Write-Host -ForegroundColor Blue "Wallpaper saved to C:\$HOME\Pictures\Saved Pictures\Backgrounds"}
 }
 
 # PowerShell config
