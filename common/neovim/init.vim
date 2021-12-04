@@ -24,7 +24,7 @@ call plug#end()
 " Environment variables
 """""""""""""""""""""""
 if has('win32')
-	let g:python3_host_prog = 'C:\Python310\python.exe'
+	let g:python3_host_prog = 'C:\Users\Angelo\scoop\apps\python\current\python.exe'
 elseif has('unix')
 	let g:python3_host_prog = '/usr/bin/python3'
 endif
