@@ -10,7 +10,7 @@ Switch (Read-Host -Prompt "Change wallpaper now? (y/N)") {
 # PowerShell config
 Copy-Item -Force .\common\pwsh\Microsoft.PowerShell_profile.ps1 $PROFILE
 If (Get-Command -ErrorAction SilentlyContinue Get-InstalledModule oh-my-posh) {
-	Copy-Item -Force ".\common\pwsh\ys.omp.json" "$HOME\Documents\PowerShell\Modules\oh-my-posh\$($(Get-InstalledModule oh-my-posh).Version)\themes\ys.omp.json"
+	Copy-Item -Force ".\common\pwsh\ys.omp.json" $(Get-PoshContext | Select-String "PowerShell")
 }
 Else {
 	Write-Host -ForegroundColor Red "Oh-My-Posh is not installed. Install it now?"
@@ -19,7 +19,7 @@ Else {
 		Default {
 			Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 			Install-Module oh-my-posh -Scope CurrentUser
-			Copy-Item -Force ".\common\pwsh\ys.omp.json" "$HOME\Documents\PowerShell\Modules\oh-my-posh\$($(Get-InstalledModule oh-my-posh).Version)\themes\ys.omp.json"
+			Copy-Item -Force ".\common\pwsh\ys.omp.json" "$(Get-PoshContext | Select-String "PowerShell")
 		}
 		"n" {Write-Host -ForegroundColor Blue "Install at any time by re-running this script."}
 	}
