@@ -15,6 +15,7 @@
  New-Alias -Name "ytdl" -Value "youtube-dl"	# Youtube-DL
  New-Alias -Name "ff" -Value "ffmpeg"		# FFmpeg
  New-Alias -Name "which" -Value "where.exe"	# Which
+ New-Alias -Name "touch" -Value "New-Item"	# Touch
 
 # Personal modules
  if (Test-Path "$HOME\Documents\PowerShell\personalmodules.ps1") {Import-Module "$HOME\Documents\PowerShell\personalmodules.ps1"}
@@ -32,8 +33,10 @@
  Function Edit-Note {nvim "$HOME/sync/note.md"}
  New-Alias -Name "note" -Value "Edit-Note"
  
-# Kill all instances of a program
- 
 # Get public IP
  Function Get-IPAddress {Invoke-WebRequest ident.me | Select-Object Content}
  New-Alias -Name "ip" -Value "Get-IPAddress"
+
+# Get weather
+ Function Get-Weather {Invoke-RestMethod "https://wttr.in/$env:WTTRlocation"}
+ New-Alias -Name "wttr" -Value "Get-Weather"
