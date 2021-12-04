@@ -26,3 +26,9 @@
 	ps = push
 	aa = add .
 	w = switch
+	sv = status --verbose
+	ua = restore --staged
+	m = merge
+	rh = reset --hard
+	rem1 = revert -m 1
+	d = diff
