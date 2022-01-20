@@ -32,3 +32,5 @@
 	rh = reset --hard
 	rem1 = revert -m 1
 	d = diff
+	cl = clone
+	rs = restore --staged
