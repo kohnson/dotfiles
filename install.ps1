@@ -3,7 +3,7 @@
 # PowerShell config
 Copy-Item -Force .\common\pwsh\Microsoft.PowerShell_profile.ps1 $PROFILE
 If (Get-Command -ErrorAction SilentlyContinue Get-InstalledModule oh-my-posh) {
-	Copy-Item -Force ".\common\pwsh\ys.omp.json" $(Get-PoshContext | Select-String "PowerShell")
+	Copy-Item -Force ".\common\pwsh\ys.omp.json" $(Get-PoshContext | Select-String ".json")
 }
 Else {
 	Write-Host -ForegroundColor Red "Oh-My-Posh is not installed. Install it now?"
@@ -12,7 +12,7 @@ Else {
 		Default {
 			Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
 			Install-Module oh-my-posh -Scope CurrentUser
-			Copy-Item -Force ".\common\pwsh\ys.omp.json" $(Get-PoshContext | Select-String "PowerShell")
+			Copy-Item -Force ".\common\pwsh\ys.omp.json" $(Get-PoshContext | Select-String ".json")
 		}
 		"n" {Write-Host -ForegroundColor Blue "Install at any time by re-running this script."}
 	}
@@ -34,3 +34,6 @@ Else {
 
 # Git config
 Copy-Item -Force ".\common\.gitconfig" "~\.gitconfig"
+
+# Winfetch config
+Copy-Item -Force ".\windows\winfetch\config.ps1" "~\.config\winfetch\"
