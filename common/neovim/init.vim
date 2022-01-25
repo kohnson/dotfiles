@@ -9,6 +9,8 @@ let mapleader = ","		" Leader
 set spell spelllang=en_ca	" Spellcheck language
 set nospell			" Unset spellcheck by default
 nnoremap ZW :w<CR>
+"nnoremap <leader>r :!Rscript -e "rmarkdown::render('%')"<CR>
+nnoremap <leader>c :noh<CR>
 
 " Plugins
 """""""""
@@ -39,7 +41,7 @@ call deoplete#custom#var('omni', 'input_patterns', {'tex': g:vimtex#re#deoplete}
 " VimTex
 """"""""
 if has ('win32')
-	let g:vimtex_view_general_viewer = 'C:\Users\Angelo\AppData\Local\SumatraPDF\SumatraPDF.exe'
+	let g:vimtex_view_general_viewer = 'sumatrapdf.exe'
 elseif has ('unix')
 	let g:vimtex_view_general_viewer = 'zathura'
 endif
@@ -60,4 +62,11 @@ let g:UltiSnipsUsePythonVersion = 3
 set noshowmode
 let g:lightline = {
 	\ 'colorscheme': 'one',
-	\ }
+	\ 'component_function': {
+		\ 'readonly': 'LightlineReadonly',
+	\ },
+\ }
+" Function for removing RO on help pages
+function! LightlineReadonly()
+	return &readonly && &filetype !=# 'help' ? 'RO' : ''
+endfunction
