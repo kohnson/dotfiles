@@ -24,14 +24,6 @@ Copy-Item -Force ".\windows\conemu\ConEmu.xml" "$HOME\scoop\persist\conemu\ConEm
 # Qutebrowser config
 Copy-Item -Force .\common\qutebrowser\autoconfig.yml $env:APPDATA\qutebrowser\config\autoconfig.yml
 
-# Modest CSS
-If (Test-Path -ErrorAction SilentlyContinue "~\Programs\share\") {Copy-Item -Force .\common\modest.css $HOME\Programs\share\modest.css}
-Else {
-	If (Test-Path -ErrorAction SilentlyContinue "~\Programs\") {MkDir "~\Programs\share"}
-	Else {MkDir "~\Programs" && MkDir "~\Programs\share"}
-	Copy-Item -Force .\common\modest.css $HOME\Programs\share\modest.css
-}
-
 # Git config
 Copy-Item -Force ".\common\.gitconfig" "~\.gitconfig"
 
