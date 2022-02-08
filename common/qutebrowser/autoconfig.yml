@@ -10,10 +10,10 @@ settings:
     global:
       q: close
       qa: quit
+      r: restart
       w: session-save
       wq: quit --save
       wqa: quit --save
-      r: restart
   bindings.commands:
     global:
       normal:
@@ -65,6 +65,13 @@ settings:
     global: lightness-cielab
   colors.webpage.darkmode.enabled:
     global: true
+  completion.open_categories:
+    global:
+    - searchengines
+    - quickmarks
+    - bookmarks
+    - history
+    - filesystem
   content.blocking.whitelist:
     global:
     - https://*.gitlab.com/*, *.tracemyip.org
@@ -75,8 +82,8 @@ settings:
     https://www.openstreetmap.org: true
     https://www.services.gov.on.ca: false
   content.headers.user_agent:
-    global: Mozilla/5.0 ({os_info}) AppleWebKit/{webkit_version} (KHTML, like Gecko)
-      {qt_key}/{qt_version} {upstream_browser_key}/{upstream_browser_version} Safari/{webkit_version}
+    global: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like
+      Gecko) Chrome/92.0.4515.131 Safari/537.36
   content.media.audio_capture:
     https://teams.microsoft.com: true
   content.media.audio_video_capture:
@@ -115,7 +122,7 @@ settings:
     - notepad
     - '{file}'
   hints.chars:
-    global: aoeuhtns
+    global: aoeufts
   scrolling.bar:
     global: overlay
   scrolling.smooth:
@@ -127,10 +134,12 @@ settings:
   url.searchengines:
     global:
       DEFAULT: https://searx.be/search?q={}
-      im: https://searx.be/search?q={}&category_images=on
+      az: https://www.amazon.ca/s?k={}
       fl: https://searx.be/search?q={}&category_files=on
-      yt: https://www.youtube.com/results?search_query={}
       gg: https://www.google.com/search?q={}
+      im: https://searx.be/search?q={}&category_images=on
+      wp: https://en.wikipedia.org/w/index.php?search={}
+      yt: https://www.youtube.com/results?search_query={}
   url.start_pages:
     global: http://blankwebsite.com/
   window.transparent:

@@ -11,32 +11,36 @@
  }
 
 # Aliases
- New-Alias -Name "g" -Value "git"		# Git
- New-Alias -Name "ytdl" -Value "youtube-dl"	# Youtube-DL
- New-Alias -Name "ff" -Value "ffmpeg"		# FFmpeg
- New-Alias -Name "which" -Value "where.exe"	# Which
- New-Alias -Name "touch" -Value "New-Item"	# Touch
+ New-Alias "g" "git"			# Git
+ New-Alias "ytdl" "youtube-dl"		# Youtube-DL
+ New-Alias "ff" "ffmpeg"		# FFmpeg
+ New-Alias "which" "where.exe"		# Which
+ New-Alias "touch" "New-Item"		# Touch
+ New-Alias "grep" "Select-String"	# Grep
+ New-Alias "v" "nvim"			# Neovim
+ Remove-Alias -Name "r"	# Remove R alias (runs last command)
 
 # Personal modules
  if (Test-Path "$HOME\Documents\PowerShell\personalmodules.ps1") {Import-Module "$HOME\Documents\PowerShell\personalmodules.ps1"}
  else {Write-Host -ForegroundColor Yellow "No personalmodules.ps1 found."}
 
 # LS, sorting by date
- function Get-DateItem {Get-ChildItem | Sort-Object LastWriteTime -Descending}
- New-Alias -Name "lsd" -Value "Get-DateItem"
+ function lsd {Get-ChildItem | Sort-Object LastWriteTime -Descending}
  
 # LS, name only
- Function Get-ChildItemName {Invoke-Expression "Get-ChildItem -Name"}
- New-Alias -Name "lsn" -Value "Get-ChildItemName"
+ Function lsn {Get-ChildItem -Name}
  
 # Write a note
- Function Edit-Note {nvim "$HOME/sync/note.md"}
- New-Alias -Name "note" -Value "Edit-Note"
+ Function note {nvim "$HOME/sync/note.md"}
+
+# Write about stuff, like some kind of loser
+ Function dry {nvim "$HOME/Documents/writing/log.rmd"}
  
 # Get public IP
- Function Get-IPAddress {Invoke-WebRequest ident.me | Select-Object Content}
- New-Alias -Name "ip" -Value "Get-IPAddress"
+ Function ip {$(Invoke-WebRequest ident.me | Select-Object Content | Select-String ":",".") -replace "@{Content=","" -replace "}",""}
 
 # Get weather
- Function Get-Weather {Invoke-RestMethod "https://wttr.in/$env:WTTRlocation"}
- New-Alias -Name "wttr" -Value "Get-Weather"
+ Function wttr {Invoke-RestMethod "https://wttr.in/$env:WTTRlocation"}
+
+# Fix Posh Prompt
+ Function fposh {Copy-Item "$HOME\dotfiles\common\pwsh\ys.omp.json" $(Get-PoshContext | Select-String ".omp.json") }

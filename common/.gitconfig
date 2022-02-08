@@ -34,3 +34,5 @@
 	d = diff
 	cl = clone
 	rs = restore --staged
+[credential "helperselector"]
+	selected = manager-core

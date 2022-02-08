@@ -15,8 +15,6 @@ nnoremap <leader>c :noh<CR>
 " Plugins
 """""""""
 call plug#begin()
-Plug 'lervag/vimtex'			" LaTeX tools
-Plug 'neomake/neomake'			" LaTeX syntax checking
 Plug 'Shougo/deoplete.nvim'		" Auto-completion
 Plug 'tpope/vim-fugitive'		" Git
 Plug 'itchyny/lightline.vim'		" Statusline
@@ -36,17 +34,6 @@ endif
 " DeoPlete
 """"""""""
 let g:deoplete#enable_at_startup = 1
-call deoplete#custom#var('omni', 'input_patterns', {'tex': g:vimtex#re#deoplete})	" Add LaTeX functionality
-""""""""
-" VimTex
-""""""""
-if has ('win32')
-	let g:vimtex_view_general_viewer = 'sumatrapdf.exe'
-elseif has ('unix')
-	let g:vimtex_view_general_viewer = 'zathura'
-endif
-let g:vimtex_view_general_options = '-reuse-instance -forward-search @tex @line @pdf'
-let g:vimtex_view_general_options_latexmk = '-reuse-instance'
 """"""""""
 " Snippets
 """"""""""
