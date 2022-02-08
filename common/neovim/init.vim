@@ -10,7 +10,7 @@ set spell spelllang=en_ca	" Spellcheck language
 set nospell			" Unset spellcheck by default
 nnoremap ZW :w<CR>
 "nnoremap <leader>r :!Rscript -e "rmarkdown::render('%')"<CR>
-nnoremap <leader>c :noh<CR>
+nnoremap <leader>n :noh<CR>
 
 " Plugins
 """""""""
