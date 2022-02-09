@@ -19,6 +19,7 @@
  New-Alias "grep" "Select-String"	# Grep
  New-Alias "v" "nvim"			# Neovim
  Remove-Alias -Name "r"	# Remove R alias (runs last command)
+ If (Get-Command soffice.com -ErrorAction SilentlyContinue) {New-Alias "libreoffice" "soffice.com"} # Libreoffice
 
 # Personal modules
  if (Test-Path "$HOME\Documents\PowerShell\personalmodules.ps1") {Import-Module "$HOME\Documents\PowerShell\personalmodules.ps1"}
