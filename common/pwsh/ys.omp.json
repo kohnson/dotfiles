@@ -21,26 +21,7 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "lightGreen",
-          "properties": {
-            "template": "$ "
-          },
-          "style": "plain",
-          "type": "text"
-        },
-        {
-          "foreground": "lightBlue",
-          "properties": {
-            "root_icon": "#",
-            "template": " \uf0e7 "
-          },
-          "style": "plain",
-          "type": "root"
-        },
-        {
-          "properties": {
-            "template": "{{ if .SSHSession }}\uf817 {{ end }}<cyan>{{ .UserName }}</> <darkGray>@</> <green>{{ .HostName }}</> "
-          },
+          "properties": {"template": "{{ if .SSHSession }}\uf6ff {{ end }}<cyan>{{ .UserName }}</> <darkGray>@</> <green>{{ .HostName }}</> "},
           "style": "plain",
           "type": "session"
         },
@@ -61,18 +42,8 @@
           "type": "git"
         },
         {
-          "foreground": "darkGray",
-          "properties": {
-            "template": "[{{ .CurrentDate | date .Format }}]"
-          },
-          "style": "plain",
-          "type": "time"
-        },
-        {
           "foreground": "red",
-          "properties": {
-            "template": " C:{{ if gt .Code 0 }}\uf00d {{ .Code }}{{ else }}\uf42e{{ end }} "
-          },
+          "properties": {"template": "{{ if gt .Code 0 }}{{ .Code }}{{ end }} "},
           "style": "plain",
           "type": "exit"
         }
@@ -85,9 +56,7 @@
       "segments": [
         {
           "foreground": "white",
-          "properties": {
-            "template": "%"
-          },
+	  "properties": {"template": "{{ if .Root }}#{{ else }}%{{ end}}"},
           "style": "plain",
           "type": "text"
         }
